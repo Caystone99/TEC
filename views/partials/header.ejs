@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <title>TEC | <%=title%></title>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="font-semibold relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.png" alt="TEC logo" width="70px">
+            </div>
+
+            <!-- Menu Item -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="/" class="hover:text-armyGreen">Home</a>
+                <a href="/services" class="hover:text-armyGreen">Services</a>
+                <a href="/academics" class="hover:text-armyGreen">Academics</a>
+                <a href="/admissions" class="hover:text-armyGreen">Admissions</a>
+                <a href="/contact" class="hover:text-armyGreen">Contact</a>
+            </div>
+
+            <!-- Button -->
+            <a 
+                href="/apply" 
+                class="hidden p-3 px-6 pt-2 text-white bg-darkGreen rounded-md baseline hover:bg-armyGreen md:block"
+            >
+                Apply Now
+            </a>
+        </div>
+    </nav>
+    

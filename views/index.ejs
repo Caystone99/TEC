@@ -1,0 +1,153 @@
+<%- include('./partials/header.ejs') %>
+    
+<!-- Hero Section -->
+<section id="hero">
+    <!-- Flex Container -->
+
+    <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+        <!-- Left Item -->
+        <div class="flex flex-col mb-10 space-y-6 md:w-1/2 md:space-y-12">
+            <h1 class="max-w-3xl text-2xl text-darkGreen font-bold text-center md:text-4xl lg:text-6xl md:text-left">
+                Discover a world of opportunities and pursue your passion with us!
+            </h1>
+            <p class="max-w-xl text-lg font-light text-center md:text-left lg:text-2xl">
+                Our vision is to educate 15,000 students every year across Africa. Bringing and giving them the best education the world has to offer.
+            </p>
+            <div class="flex justify-center md:justify-start">
+                <a 
+                    href="/apply" 
+                    class="borderBtn mt-5 p-3 px-6 pt-2 text-armyGreen baseline font-semibold"
+                >
+                    Apply Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="md:w-1/2">
+            <img src="img/heroBG2.png" alt="Hero Background">
+        </div>
+
+    </div>
+</section>
+
+<!--Trusted-->
+<section id="trusted">
+    <div class="container flex flex-col mx-auto mt-20 text-center mb-20">
+       <div class="text-2xl font-light text-center m-5">
+            <h2> Trusted By Leading Educational Institutions Around The World</h2>
+       </div>
+
+       <div class="flex flex-row flex-wrap justify-center items-center md:flex-row">
+        <% trusted.map(trust=>{%>
+            <span class="mx-5 p-5 grayscale">
+                <img src="<%=trust.src%>" alt="partner" width="100px"/>
+            </span>
+        <%})%>
+       </div>
+    </div>
+</section>
+
+<!--Banner-->
+
+<section id="banner" class="bg-darkGreen w-full h-full relative">
+    <!-- <img src="img/bannerOverlay.png" alt="" class="top-0 hidden opacity-20 absolute md:block md:absolute md:min-w-full md:min-h-full">-->
+
+    <div class="container flex flex-col py-28 mx-auto items-center mt-10 space-y-12 md:space-y-0 md:flex-row ">
+      <div class="flex flex-col mx-5 space-y-12 md:w-1/2">
+          <h2 class="text-white max-w-lg text-4xl md:text-5xl font-bold text-center md:text-left">
+              TPAPY EDUCATIONAL CONSULTS
+          </h2>
+          <p class="text-white text-lg md:text-xl font-medium text-center md:text-left">
+              Our Foundation is dedicated to providing education so that all students can 
+              acquire and effectively apply the knowledge, attitudes, and skills necessary 
+              to thrive in their studies, careers, and adult lives
+          </p>
+      </div>
+      <div class="mx-auto flex justify-center items-center text-center space-y-12 md:w-1/2">
+        <img src="img/bannerImg2.png" alt="logo" class="scale-75 rounded-full ">
+      </div>
+    </div>  
+</section>
+
+<!--Schools-->
+<section id="schools">
+    <div class="container mx-auto mt-20 mb-10 flex flex-col justify-center">
+        <p class="text-center font-semibold text-xl mt-10">CHOOSE A PATH</p>
+        <h2 class="text-center font-bold text-4xl mb-10 text-darkGreen md:text-4xl">OUR SCHOOLS</h2>
+
+        <div class="flex flex-col items-start justify-center md:flex-row md:flex-wrap">
+            <div class="p-5 mx-2 my-5 flex flex-col justify-center md:w-1/2 md:max-w-sm lg:max-w-md">
+                <span class="text-center">
+                    <i class="fa-solid fa-screwdriver-wrench text-4xl mb-5 text-darkGreen"></i>
+                    <p class="font-bold text-armyGreen text-sm">THE SCHOOL OF</p>
+                    <h3 class="text-darkGreen text-2xl mb-5">Vocational Studies</h3>
+                </span>
+                <span class="text-center">
+                    <p class="text-armyGreen font-medium text-justify">
+                        Gain the technical skills needed to work in leading industries around the world.
+                        Our programs are built around a curicullum implemented by hundreds of industry experts,
+                        and take a practical first approach.
+                    </p>
+                    <br>
+                    <a href="/vocational" class="borderBtn mt-5 p-3 px-6 pt-2 text-armyGreen baseline font-semibold">
+                        Explore Diplomas
+                    </a>
+                </span>
+            </div>
+
+            <div class="p-5 mx-2 my-5 flex flex-col justify-center md:w-1/2 md:max-w-sm lg:max-w-md">
+                <span class="text-center">
+                    <i class="fa-solid fa-graduation-cap text-4xl mb-5 text-darkGreen"></i>
+                    <p class="font-bold text-armyGreen text-sm">THE SCHOOL OF</p>
+                    <h3 class="text-darkGreen text-2xl mb-5">Undergraduate Studies</h3>
+                </span>
+                <span class="text-center">
+                    <p class="text-armyGreen font-medium text-justify">
+                        Gain a Bachelors degree in three or more years, from universities recognised by top educational
+                        institutions across the world.
+                        Our programs are designed to give you the most out of your learning experience.
+                    </p>
+                    <br>
+                    <a href="/undergraduate" class="borderBtn mt-5 p-3 px-6 pt-2 text-armyGreen baseline font-semibold">
+                        Explore Programmes
+                    </a>
+                </span>
+            </div>
+
+            <div class="p-5 mx-2 my-5 flex flex-col justify-center md:w-1/2 md:max-w-sm lg:max-w-md">
+                <span class="text-center">
+                    <i class="fa-solid fa-school text-4xl mb-5 text-darkGreen"></i>
+                    <p class="font-bold text-armyGreen text-sm">THE SCHOOL OF</p>
+                    <h3 class="text-darkGreen text-2xl mb-5">Graduate Studies</h3>
+                </span>
+                <span class="text-center">
+                    <p class="text-armyGreen font-medium text-justify">
+                        Gain a Postgraduate Diploma, Masters Degree, Doctorate with us, explore Postgraduate courses that offers you a unique experience to study, work and collaborate 
+                        with leading academics, libraries and collections.
+                    </p>
+                    <br>
+                    <a href="/postgraduate" class="borderBtn mt-5 p-3 px-6 pt-2 text-armyGreen baseline font-semibold">
+                        Explore Courses
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimony">
+  <div class="max-w-6xl px-5 mx-auto text-center pt-20 pb-20">
+      <p class="text-center font-semibold text-xl mt-10">HEAR FROM SOME OF OUR OWN</p>
+      <h2 class="text-5xl max-w-lg font-bold text-center mx-auto">TESTIMONY</h2>
+    <div class='bg-black h-[500px] mt-10'>
+  </div>
+</section>
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %>
