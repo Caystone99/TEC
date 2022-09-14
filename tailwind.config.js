@@ -11,6 +11,7 @@ module.exports = {
     
     extend: {
       colors: {
+        'navCol':"#e4e4e4",
         'beige': '#BD7E4E',
         'armyGreen': '#526B56',
         'darkGreen': '#023C22',
