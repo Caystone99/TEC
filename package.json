@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js",
+    "start": "node index.js",
     "watch": "tailwindcss -i ./dist/input.css -o ./public/css/style.css --watch",
-    "dev": "nodemon run ./src/index.js"
+    "dev": "nodemon run index.js"
   },
   "author": "Caleb-Livingstone Emmanuel",
   "license": "ISC",
