@@ -21,6 +21,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #526B56;
   /*outline: 1px solid #526b5627;*/
 }
+
 .borderBtn{
   border:2px solid rgb(82 107 86);
 }
