@@ -948,7 +948,7 @@ video {
 body{
   background:#526b5627;
   color:#023C22;
-  font-family: 'Poppins'
+  font-family: 'Poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {

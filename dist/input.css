@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body{
     background:#526b5627;
     color:#023C22;
-    font-family: 'Poppins'
+    font-family: 'Poppins', sans-serif;
 }
 body::-webkit-scrollbar {
     width: 0.25em;
