@@ -6,7 +6,7 @@
     <div class="container flex flex-col-reverse items-center px-6 mx-auto pt-10 mt-20 space-y-0 md:space-y-0 md:flex-row">
         <!-- Left Item -->
         <div class="flex flex-col mb-10 space-y-6 md:w-1/2 md:space-y-12">
-            <h1 class="max-w-3xl text-2xl text-darkGreen font-bold text-center md:text-4xl lg:text-6xl md:text-left">
+            <h1 class="max-w-3xl text-2xl text-darkGreen font-medium text-center md:text-4xl lg:text-6xl md:text-left">
                 Discover a world of opportunities and pursue your passion with us!
             </h1>
             <p class="max-w-xl text-lg font-light text-center md:text-left lg:text-2xl">
@@ -39,8 +39,8 @@
 
        <div class="flex flex-row flex-wrap justify-center items-center md:flex-row">
         <% trusted.map(trust=>{%>
-            <span class="mx-5 p-5 grayscale">
-                <img src="<%=trust.src%>" alt="partner" width="100px"/>
+            <span class="mx-5 p-2 md:p-5 grayscale">
+                <img src="<%=trust.src%>" alt="partner" class="w-[80px] md:w-[100px] "/>
             </span>
         <%})%>
        </div>
@@ -49,22 +49,22 @@
 
 <!--Banner-->
 
-<section id="banner" class="bg-darkGreen w-full h-full relative">
+<section id="banner" class="bg-darkGreen">
     <!-- <img src="img/bannerOverlay.png" alt="" class="top-0 hidden opacity-20 absolute md:block md:absolute md:min-w-full md:min-h-full">-->
 
     <div class="container flex flex-col py-20 mx-auto items-center mt-10 space-y-12 md:space-y-0 md:flex-row ">
       <div class="flex flex-col mx-5 space-y-12 md:w-1/2">
-          <h2 class="text-white max-w-lg text-4xl md:text-5xl font-bold text-center md:text-left">
+          <h2 class="text-white max-w-lg text-4xl font-bold text-center md:text-left">
               TPAPY EDUCATIONAL CONSULTS
           </h2>
-          <p class="text-white text-lg md:text-xl font-medium text-center md:text-left">
+          <p class="text-white text-lg font-medium text-center md:text-left">
               Our Foundation is dedicated to providing education so that all students can 
               acquire and effectively apply the knowledge, attitudes, and skills necessary 
               to thrive in their studies, careers, and adult lives
           </p>
       </div>
       <div class="mx-auto flex justify-center items-center text-center space-y-12 md:w-1/2">
-        <img src="img/bannerImg2.png" alt="logo" class="scale-90 rounded-full ">
+        <img src="img/bannerImg4.jpg" alt="logo" class="w-[300px] rounded-full ">
       </div>
     </div>  
 </section>
@@ -135,11 +135,27 @@
     </div>
 </section>
 
+<section id="scholarship" class="bg-beige text-white">
+    <div class="container mx-auto pt-10 pb-20 mt-20 flex flex-col items-center text-center">
+        <p class="text-center font-semibold text-xl mt-10">SCHOLARSHIP</p>
+        <h2 class="text-4xl max-w-lg font-bold text-center mx-auto">IN NEED OF FINANCIAL AID?</h2>
+        <p class="text-lg pt-5 mt-4 px-5 max-w-full text-justify md:max-w-4xl md:text-center">
+            With a signed partnership with accredited universities in Togo, Benin Republic, Nigeria,  
+            we offer up to 70% fee waiver on your Tuition and Accommodation fees for the entirety of your studies.
+        </p>
+        <br>
+        <a href="/postgraduate" class="p-3 px-6 pt-2 text-white bg-darkGreen 
+        rounded-md baseline hover:bg-armyGreen md:block">
+            Learn More
+        </a>
+    </div>
+</section>
+
 <section id="testimony">
   <div class="max-w-6xl px-5 mx-auto mt-20 text-center mb-20">
       <p class="text-center font-semibold text-xl mt-10">HEAR FROM OUR OWN</p>
       <h2 class="text-4xl max-w-lg font-bold text-center mx-auto">STORIES FROM REAL PEOPLE</h2>
-    <div class='bg-black h-[300px] md:h-[500px] mt-10'>
+    <div class='bg-black h-[200px] md:h-[500px] mt-10'>
   </div>
 </section>
 
