@@ -13,6 +13,10 @@ router.get('/', (req, res)=>{
     res.render('index', {title:"Home", trusted})
 })
 
+router.get('/apply', (req, res)=>{
+    res.render('apply', {title:'Application'})
+})
+
 router.use('*',(req, res)=>{
     res.status(404);
     res.render('404', {title:'Page not found'})
