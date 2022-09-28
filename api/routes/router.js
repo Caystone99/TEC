@@ -17,6 +17,10 @@ router.get('/apply', (req, res)=>{
     res.render('apply', {title:'Application'})
 })
 
+router.get('/programs', (req, res)=>{
+    res.render('programs', {title:'Programs'})
+})
+
 router.use('*',(req, res)=>{
     res.status(404);
     res.render('404', {title:'Page not found'})
