@@ -14,114 +14,284 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>TEC | <%=title%></title>
 </head>
-<body>
 
-    <section id="application" class="flex flex-row justify-evenly w-full h-full">
-        <div class="hidden container md:flex flex-col items-center space-y-20 z-30 w-auto h-full fixed bg-slate-50 left-0">
-            <div class="px-10">
-                <div class="flex flex-col items-center justify-center space-y-12 mx-auto p-5">
-                    <span class="logo flex flex-col items-center">
-                        <img src="img/logo.png" alt="logo" class="w-[80px]">
-                        <h4 class="font-semibold">TPAPY Educational Consults</h4>
-                    </span>
-                </div>
-                <div class="mx-auto pt-10">
-                    <ul class="mt-10 p-5 space-y-10">
-                        <li class="flex flex-row items-center">
-                            <span class="flex justify-center items-center relative p-[5px] border-darkGreen-50 border-2 border-solid rounded-full w-10 h-10">
-                                <!--<i class="fa fa-check text-white"></i>-->
-                                <p class="font-bold">1</p>
-                            </span>
-                            &nbsp; &nbsp;
-                            <h5 class="font-bold text-sm text-gray-700">
-                                PERSONAL DATA
-                            </h5>
-                        </li>
-    
-                        <li class="flex flex-row items-center">
-                            <span class="flex justify-center items-center relative p-[5px] border-darkGreen-50 border-2 border-solid rounded-full w-10 h-10">
-                                <!--<i class="fa fa-check text-white"></i>-->
-                                <p class="font-bold">2</p>
-                            </span>
-                            &nbsp; &nbsp;
-                            <h5 class="font-bold text-sm text-gray-700">
-                                ACADEMIC QUALIFICATION
-                            </h5>
-                        </li>
-    
-                        <li class="flex flex-row items-center">
-                            <span class="flex justify-center items-center relative p-[5px] border-darkGreen-50 border-2 border-solid rounded-full w-10 h-10">
-                                <!--<i class="fa fa-check text-white"></i>-->
-                                <p class="font-bold">3</p>
-                            </span>
-                            &nbsp; &nbsp;
-                            <h5 class="font-bold text-sm text-gray-700">
-                                STUDY INFORMATION
-                            </h5>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="mt-20">
-                    <img src="/img/rafiki.svg" alt="" class="w-[300px]">
-                </div>
-            </div>            
+<body class="bg-white">
+  
+    <section id="apply" class="">
+      <div class="container mx-auto w-[100vw] h-[100vh]">
+        <div class="relative top-24 md:top-28 mb-10 pl-10">
+          <a href="/">
+            <i class="fa fa-arrow-left"></i> Back to Home
+          </a>
         </div>
-
-        <div class="container mx-auto md:max-w-6xl mt-5 px-10 text-center md:text-left md:mt-40 md:pl-56 lg:pl-96 lg:ml-96 md:pr-10 md:ml-60">
-            <div id="applyBody" class="space-y-2">
-                <div class="md:hidden flex flex-col items-center justify-center space-y-12 mx-auto p-5">
-                    <span class="logo flex flex-col items-center">
-                        <img src="img/logo.png" alt="logo" class="w-[80px]">
-                        <h4 class="font-semibold">TPAPY Educational Consults</h4>
-                    </span>
-                </div>
-
-                <h2 class="font-bold text-3xl lg:text-4xl">
-                    Admission Requirements
-                </h2>
-                <p class="text-sm font-light italic">
-                    To be considered for admission to any degree program, the following basic requirements need to be met.
-                </p>
-                    
-                <ul class="pt-5 space-y-2 list-decimal  text-left">
-                    <h4 class="font-semibold">
-                        Diploma Requirements
-                    </h4>
-                    
-                    <li>International Passport/ID Card (if available)</li>
-                </ul>
-                    
-                <ul class="pt-5 space-y-2 list-decimal text-left">
-                    <h4 class="font-semibold">
-                        Undergraduate Requirements
-                    </h4>
-                    
-                    <li>O'level (SSCE, GCE, NABTEB, BAC etc)</i></li>
-                    <li>Passport Photograph</li>
-                    <li>Birth Certificate</li>
-                    <li>International Passport/ID Card (if available)</li>
-                    <li><b>For Direct Entry: </b> Transcripts (if available).</li>
-                </ul>
-                    
-                <ul class="pt-5 space-y-2 list-decimal text-left">
-                    <h4 class="font-semibold">
-                        Graduate Requirements
-                    </h4>
-                    
-                    <li>International Passport/ID Card (if available)</li>
-                    <li>Transcripts of Antecedent of Undergraduate Studies</i></li>
-                    <li>Certificate/Testimonials of Antecedent Undergraduate Studies</li>
-                </ul>
-                <br>
-
-                <button class="bg-beige items-center text-white rounded-sm px-6 py-2  mt-5 p-3 font-bold text-sm md:float-right">NEXT</button>
+        <form action="/apply" method="post" class="relative top-24 md:top-36 flex justify-center">
+          
+          <!-- Form 1 -->
+          <div id="personal" class="flex flex-col space-y-5">
+            <h2 class="font-bold text-3xl mb-10">Personal Information</h2>
+            
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="passport" class="block text-sm font-medium"> Passport Photograph </label>
+              <input 
+                type="file"
+                name="pasport"
+                placeholder="First Middle & Last Name"
+                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+              />
             </div>
-        </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+                <label for="name" class="block text-sm font-medium"> Your Fullname </label>
+                <input 
+                  type="text"
+                  name="name"
+                  placeholder="First Middle & Last Name"
+                  class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                />
+            </div>
+
+            <div class="flex flex-row items-center space-x-2 space-y-0">
+              <div class="space-y-2">
+                <label for="date_of_birth" class="block text-sm font-medium"> Date of Birth </label>
+                <input 
+                  type="date"
+                  name="date_of_birth"
+                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="state_of_origin" class="block text-sm font-medium">Gender</label>
+                <select name='gender' class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                  <option>Your Gender</option>
+                  <option value='Male'>Male</option>
+                  <option value='Female'>Female</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="nationality" class="block text-sm font-medium"> Your Nationality </label>
+              <input 
+                type="text"
+                name="date_of_birth"
+                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                placeholder="Nationality"
+              />
+            </div>
+  
+            <div class="flex flex-row items-center space-x-2 space-y-0">
+              <div class="space-y-2">
+                <label for="place_of_birth" class="block text-sm font-medium">Place of Birth</label>
+                <input 
+                  type="text"
+                  name="place_of_birth"
+                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  placeholder="Place of Birth"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="state_of_origin" class="block text-sm font-medium">State of Origin</label>
+                <input 
+                  type="text"
+                  name="state_of_origin"
+                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  placeholder="State of Origin"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="home_address" class="block text-sm font-medium"> Home Address </label>
+              <input 
+                type="text"
+                name="home_address"
+                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                placeholder="Nationality"
+              />
+            </div>
+
+            <div class="flex flex-row items-center space-x-2 space-y-0">
+              <div class="space-y-2">
+                <label for="email" class="block text-sm font-medium"> Email Address </label>
+                <input 
+                  type="email"
+                  name="email"
+                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="phone_num" class="block text-sm font-medium"> Phone Number </label>
+                <input 
+                  type="text"
+                  name="phone_num"
+                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <hr>
+            <div class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md" id="personFw">
+              Academic Details
+            </div>
+
+          </div>
+
+          <!-- Form 2 -->
+
+          <div id="academic" class="hidden flex-col space-y-5">
+            <h2 class="font-bold text-3xl mb-10">Academic Qualification</h2>
+            
+            <div id="oLevel" class="flex flex-col space-y-2 items-start ">
+                <label for="o_level" class="block text-sm font-medium"> O'Level Certificate </label>
+                <input 
+                  type="file"
+                  name="o_level"
+                  class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                />
+            </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <div class="cursor-pointer w-[80vw] md:w-[400px] bg-armyGreen text-white flex items-center justify-between rounded-md py-4 px-8" id="addInput">
+                <i class="fa fa-graduation-cap fa-2x"></i>
+                <span>
+                    <h5 class="font-semibold text-sm">Add Another O'Level Result</h5>
+                    <p class="mt-1 font-semibold text-[12px]">Merge two O'Level results together</p>
+                </span>
+                <i class="fa fa-plus-circle fa-1x"></i>
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="trasncript" class="block text-sm font-medium"> Transcript of Academic Record (if available) </label>
+              <input 
+                type="file"
+                name="transcript"
+                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+              />
+            </div>
+          
+            <hr>
+
+            <div class="flex flex-row items-center space-x-2 space-y-0">
+              <div id='personBk' class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]">
+                Personal Info.
+              </div>
+  
+              <div id="academicFw" class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]"">
+                Study Info.
+              </div>
+            </div>
+          </div>
+
+          <!-- Form 3 -->
+
+          <div id="study" class="hidden flex-col space-y-5">
+            <h2 class="font-bold text-3xl mb-10">Study Information</h2>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="degree_type" class="block text-sm font-medium">Degree Type</label>
+                <select name='degree_type' class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                  <option>Degree Type</option>
+                  <option value='Diploma'>Diploma</option>
+                  <option value='Bachelors'>Bachelors</option>
+                  <option value='Post Graduate Diploma'>Post Graduate Diploma</option>
+                  <option value='Masters'>Masters</option>
+                </select>
+            </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="course" class="block text-sm font-medium"> Course </label>
+              <input
+                type='text'
+                placeholder='Course of Study'
+                name='course'
+                list = 'courseList'
+                class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+              />
+              <datalist id='courseList'>
+                <option value='ACCOUNTING'>ACCOUNTING</option>
+                <option value='AGRICULTURAL ECONOMICS'>AGRICULTURAL ECONOMICS</option>
+                <option value='BANKING AND FINANCE'>BANKING AND FINANCE</option>
+                <option value='BUSINESS ADMINISTRATION'>BUSINESS ADMINISTRATION</option>
+                <option value='COMPUTER SCIENCE'>COMPUTER SCIENCE</option>
+                <option value='COMPUTER ENGINEERING'>COMPUTER ENGINEERING</option>
+                <option value='ECONOMICS'>ECONOMICS</option>
+                <option value='ENVIRONMENTAL SCIENCE'>ENVIRONMENTAL SCIENCE</option>
+                <option value='HEALTH INFORMATION MANAGEMENT'>HEALTH INFORMATION MANAGEMENT</option>
+                <option value='HOTEL MANAGEMENT'>HOTEL MANAGEMENT</option>
+                <option value='HUMAN RESOURCE MANAGEMENT'>HUMAN RESOURCE MANAGEMENT</option>
+                <option value='INFORMATION COMMUNICATION TECHNOLOGY'>INFORMATION COMMUNICATION TECHNOLOGY</option>
+                <option value='INSURANCE AND RISK MANAGEMENT'>INSURANCE AND RISK MANAGEMENT</option>
+                <option value='INTERNATIONAL RELATIONS'>INTERNATIONAL RELATIONS</option>
+                <option value='LAW'>LAW</option>
+                <option value='LINGUISTICS (English)'>LINGUISTICS (English)</option>
+                <option value='LINGUISTICS (French)'>LINGUISTICS (French)</option>
+                <option value='MASS COMMUNICATION'>MASS COMMUNICATION</option>
+                <option value='MANAGEMENT INFORMATION TECHNOLOGY'>MANAGEMENT INFORMATION TECHNOLOGY</option>
+                <option value='MARKETING'>MARKETING</option>
+                <option value='MICROBIOLOGY'>MICROBIOLOGY</option>
+                <option value='NURSING'>NURSING</option>
+                <option value='PHARMACY'>PHARMACY</option>
+                <option value='PHILOSOPHY'>PHILOSOPHY</option>
+                <option value='POLITICAL SCIENCE'>POLITICAL SCIENCE</option>
+                <option value='PSYCHOLOGY'>PSYCHOLOGY</option>
+                <option value='SAFETY AND DISASTER MANAGEMENT'>SAFETY AND DISASTER MANAGEMENT</option>
+                <option value='SAFETY AND HEALTH MANAGEMENT'>SAFETY AND HEALTH MANAGEMENT</option>
+                <option value='SAFETY AND RISK MANAGEMENT'>SAFETY AND RISK MANAGEMENT</option>
+                <option value='SOCIOLOGY'>SOCIOLOGY</option>
+                <option value='TOURISM'>TOURISM</option>
+                <option value='TOURISM AND HOTEL MANAGEMENT'>TOURISM AND HOTEL MANAGEMENT</option>
+                <option value='TRANSPORT AND LOGISTICS MANAGEMENT'>TRANSPORT AND LOGISTICS MANAGEMENT</option>
+              </datalist>
+            </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="state_option" class="block text-sm font-medium">Mode of Study</label>
+                <select name='mode_of_study' class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                  <option>Mode of Study</option>
+                  <option value='Fulltime'>Fulltime</option>
+                  <option value='Part time'>Part time</option>
+                </select>
+            </div>
+          
+            <hr>
+
+            <div class="flex flex-row items-center space-x-2 space-y-0">
+              <div class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]" id="studyBk">
+                Academic Details
+              </div>
+  
+              <div class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]">
+                Payment
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
     </section>
 
 
 </body>
+
 <script src="icon/js/all.js"></script>
 <script src="js/apply.js"></script>
+<script src="js/script.js"></script>
 </html>
+
+<!--
+
+  <div class="flex flex-col items-center">
+              <span class="flex items-center w-[80vw] md:w-[150px] md:h-[180px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen cursor-pointer">
+                <label for="name" class="flex relative text-center cursor-pointer"> Passport Photograph </label> 
+                <input 
+                  type="file"
+                  name="name"
+                  class=" cursor-pointer absolute opacity-0 w-[80vw] md:w-[150px] md:h-[180px]"
+                />  
+              </span>           
+            </div>
+
+
+-->
