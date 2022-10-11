@@ -17,13 +17,6 @@ router.get('/apply', (req, res)=>{
     res.render('apply', {title:'Application'})
 })
 
-<<<<<<< Updated upstream
-=======
-router.get('/school/home', (req, res)=>{
-    res.send('Hello World')
-})
-
->>>>>>> Stashed changes
 router.use('*',(req, res)=>{
     res.status(404);
     res.render('404', {title:'Page not found'})
