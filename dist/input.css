@@ -73,3 +73,51 @@ body::-webkit-scrollbar-thumb {
 .borderBtn{
   border:2px solid rgb(82 107 86);
 }
+
+
+/* Scroll Animation */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity:0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.formHidden{
+  display:none;
+  transform: translateX(-900px);
+  transition: 2s all ease;
+}
+
+@-webkit-keyframes slideOut{
+  0%{
+    left:0px;
+  }
+  50%{
+    left:300px;
+  }
+  100%{
+    display:none;
+  }
+}
+
+@keyframes slideOut{
+  0%{
+    left:0px;
+  }
+  50%{
+    left:300px;
+  }
+  100%{
+    display:none;
+  }
+}
+
+.formActive{
+  transform: translateX(0);
+  display:flex;
+}

@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs') %>
     
 <!-- Hero Section -->
-<section id="hero">
+<section id="hero" class="active">
     <!-- Flex Container -->
     <div class="container flex flex-col-reverse items-center px-6 mx-auto pt-10 mt-20 space-y-0 md:flex-row">
         <!-- Left Item -->
@@ -31,7 +31,7 @@
 </section>
 
 <!--Trusted-->
-<section id="trusted">
+<section id="trusted"  class="reveal">
     <div class="container flex flex-col mx-auto mt-20 text-center mb-20">
        <div class="text-xl font-light text-center m-5">
             <h2> Trusted By Leading Educational Institutions Around The World</h2>
@@ -49,10 +49,10 @@
 
 <!--Banner-->
 
-<section id="banner" class="bg-darkGreen">
+<section id="banner" class="bg-darkGreen reveal">
     <!-- <img src="img/bannerOverlay.png" alt="" class="top-0 hidden opacity-20 absolute md:block md:absolute md:min-w-full md:min-h-full">-->
 
-    <div class="container flex flex-col py-20 mx-auto items-center mt-10 space-y-12 md:space-y-0 md:flex-row ">
+    <div class="container flex flex-col mx-auto items-center py-10 mt-10 space-y-12 md:space-y-0 md:flex-row ">
       <div class="flex flex-col mx-5 space-y-12 md:w-1/2">
           <h2 class="text-white max-w-lg text-4xl font-bold text-center md:text-left">
               TPAPY EDUCATIONAL CONSULTS
@@ -70,15 +70,15 @@
 </section>
 
 <!--Schools-->
-<section id="schools">
-    <div class="container mx-auto mt-20 mb-10 flex flex-col justify-center">
+<section id="schools" class="mt-20 reveal">
+    <div class="container mx-auto pt-10 mb-10 flex flex-col justify-center">
         <p class="text-center font-semibold text-xl mt-10">CHOOSE A PATH</p>
         <h2 class="text-center font-bold text-4xl mb-10 text-darkGreen md:text-4xl">OUR SCHOOLS</h2>
 
         <div class="flex flex-col items-start justify-center md:flex-row md:flex-wrap">
             <div class="p-5 mx-2 my-5 flex flex-col justify-center md:w-1/2 md:max-w-sm lg:max-w-md">
-                <span class="text-center">
-                    <i class="fa-solid fa-screwdriver-wrench text-4xl mb-5 text-darkGreen"></i>
+                <span class="text-center flex flex-col items-center">
+                    <img src='img/voc-icon.png' class="w-[40px] mb-5"/>
                     <p class="font-bold text-armyGreen text-sm">THE SCHOOL OF</p>
                     <h3 class="text-darkGreen text-2xl mb-5">Vocational Studies</h3>
                 </span>
@@ -96,8 +96,8 @@
             </div>
 
             <div class="p-5 mx-2 my-5 flex flex-col justify-center md:w-1/2 md:max-w-sm lg:max-w-md">
-                <span class="text-center">
-                    <i class="fa-solid fa-graduation-cap text-4xl mb-5 text-darkGreen"></i>
+                <span class="text-center flex flex-col items-center">
+                    <img src='img/undergrad-icon.png' class="w-[40px] mb-5"/>
                     <p class="font-bold text-armyGreen text-sm">THE SCHOOL OF</p>
                     <h3 class="text-darkGreen text-2xl mb-5">Undergraduate Studies</h3>
                 </span>
@@ -115,8 +115,8 @@
             </div>
 
             <div class="p-5 mx-2 my-5 flex flex-col justify-center md:w-1/2 md:max-w-sm lg:max-w-md">
-                <span class="text-center">
-                    <i class="fa-solid fa-school text-4xl mb-5 text-darkGreen"></i>
+                <span class="text-center flex flex-col items-center">
+                    <img src='img/grad-icon.png' class="w-[40px] mb-5"/>
                     <p class="font-bold text-armyGreen text-sm">THE SCHOOL OF</p>
                     <h3 class="text-darkGreen text-2xl mb-5">Graduate Studies</h3>
                 </span>
@@ -135,8 +135,8 @@
     </div>
 </section>
 
-<section id="scholarship" class="bg-beige text-white">
-    <div class="container mx-auto pt-10 pb-20 mt-20 flex flex-col items-center text-center">
+<section id="scholarship" class="mt-20 bg-beige text-white reveal">
+    <div class="container mx-auto pt-10 pb-20 flex flex-col items-center text-center">
         <p class="text-center font-semibold text-xl mt-10">SCHOLARSHIP</p>
         <h2 class="text-4xl max-w-lg font-bold text-center mx-auto">IN NEED OF FINANCIAL AID?</h2>
         <p class="text-lg pt-5 mt-4 px-5 max-w-full text-justify md:max-w-4xl md:text-center">
@@ -151,7 +151,7 @@
     </div>
 </section>
 
-<section id="testimony">
+<section id="testimony reveal">
   <div class="max-w-6xl px-5 mx-auto mt-20 text-center mb-20">
       <p class="text-center font-semibold text-xl mt-10">HEAR FROM OUR OWN</p>
       <h2 class="text-4xl max-w-lg font-bold text-center mx-auto">STORIES FROM REAL PEOPLE</h2>
