@@ -16,8 +16,17 @@
 </head>
 
 <body class="bg-white">
-<div id='alert' class="alert bg-redNotice">
-    
+<div id='alert' class="alert">
+    <div class="modal bg-white rounded-md shadow-md w-[90%] pb-5 md:w-[500px] text-center text-black space-y-7 flex flex-col justify-center">
+      <div class="bg-gray-600 w-full h-[80px] rounded-t-md flex justify-center items-center">
+        <i class="fa fa-exclamation-triangle fa-3x fa-beat text-white" aria-hidden="true"></i>
+      </div>
+      <div class="space-y-3 flex flex-col items-center justify-center">
+        <h2 class="font-medium text-4xl">Ooops!</h2>
+        <p>Something went wrong. Please fill all missing fields.</p>
+        <div id="modal_close" class="cursor-pointer w-[120px] py-1 px-3 bg-gray-600 text-white rounded-full">Try Again</div>
+      </div>
+    </div>
 </div>
     <section id="apply" class="">
       <div class="container mx-auto w-[100vw] h-[100vh]">
@@ -249,6 +258,16 @@
                 <option value='TOURISM AND HOTEL MANAGEMENT'>TOURISM AND HOTEL MANAGEMENT</option>
                 <option value='TRANSPORT AND LOGISTICS MANAGEMENT'>TRANSPORT AND LOGISTICS MANAGEMENT</option>
               </datalist>
+            </div>
+
+            <div class="flex flex-col space-y-2 items-start ">
+              <label for="session" class="block text-sm font-medium">Session</label>
+                <select name='session' class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                  <option>Choose a Session</option>
+                  <option value='Fulltime'>Winter - (Starts January, 2023)</option>
+                  <option value='Part time'>Summer - (Starts June, 2023)</option>
+                  <option value='Fulltime'>Fall - (Starts September, 2023)</option>
+                </select>
             </div>
 
             <div class="flex flex-col space-y-2 items-start ">

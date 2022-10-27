@@ -1,3 +1,5 @@
+let modalClose = document.getElementById('modal_close');
+
 let apply = document.getElementById('application_form');
 let notice = document.getElementById('alert');
 
@@ -15,13 +17,15 @@ let oLevel = document.getElementById('oLevel');
 let addBtn = document.getElementById('addInput');
 let inputCount = 1;
 
+modalClose.addEventListener('click', ()=>{
+    if(notice.style.display === "" || notice.style.display==="flex"){
+        notice.style.display = "none";
+    }
+})
+
 personFw.addEventListener('click', ()=>{
     if(apply.name.value === ""){
-        notice.style.display = "block"
-        notice.innerHTML = "Please fill all required fields";
-        setTimeout(()=>{
-            notice.style.display = "none"
-        }, 5000)
+        notice.style.display = "flex"
     }else{ 
         personal.style.display = "none"
         academic.style.display = "flex"

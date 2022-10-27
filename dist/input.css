@@ -122,14 +122,14 @@ body::-webkit-scrollbar-thumb {
   display:flex;
 }
 
-.alert{
+#alert{
   z-index:1000;
   position: fixed;
-  display: none;
-  top:0;
-  padding:10px;
-  width:100%;
-  text-align:center;
-  transition:2.2s;
-  color:#fff;
+  display:none;
+  height:100vh;
+  width:100vw;
+  background-color: #526b563a;
+  transition:2s;
+  align-items: center;
+  justify-content: center;
 }
