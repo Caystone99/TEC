@@ -121,3 +121,15 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(0);
   display:flex;
 }
+
+.alert{
+  z-index:1000;
+  position: fixed;
+  display: none;
+  top:0;
+  padding:10px;
+  width:100%;
+  text-align:center;
+  transition:2.2s;
+  color:#fff;
+}

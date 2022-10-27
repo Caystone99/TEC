@@ -16,85 +16,90 @@
 </head>
 
 <body class="bg-white">
-  
+<div id='alert' class="alert bg-redNotice">
+    
+</div>
     <section id="apply" class="">
       <div class="container mx-auto w-[100vw] h-[100vh]">
-        <div class="relative top-24 md:top-28 mb-10 pl-10">
+        <div class="relative top-24 md:top-24 mb-5 pl-10">
           <a href="/">
             <i class="fa fa-arrow-left"></i> Back to Home
           </a>
         </div>
-        <form action="/apply" method="post" class="relative top-24 md:top-36 flex justify-center">
-          
+        <form action="/apply" method="post" id="application_form" class="relative top-24 md:top-28 flex justify-center">
+
           <!-- Form 1 -->
           <div id="personal" class="flex flex-col space-y-5">
-            <h2 class="font-bold text-3xl mb-10">Personal Information</h2>
-            
+            <h2 class="font-bold text-3xl mb-5">Personal Information</h2>
+
             <div class="flex flex-col space-y-2 items-start ">
               <label for="passport" class="block text-sm font-medium"> Passport Photograph </label>
-              <input 
+              <input
                 type="file"
                 name="pasport"
                 placeholder="First Middle & Last Name"
-                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                required
               />
             </div>
 
             <div class="flex flex-col space-y-2 items-start ">
                 <label for="name" class="block text-sm font-medium"> Your Fullname </label>
-                <input 
+                <input
                   type="text"
                   name="name"
                   placeholder="First Middle & Last Name"
-                  class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  required
                 />
             </div>
 
             <div class="flex flex-row items-center space-x-2 space-y-0">
               <div class="space-y-2">
                 <label for="date_of_birth" class="block text-sm font-medium"> Date of Birth </label>
-                <input 
+                <input
                   type="date"
                   name="date_of_birth"
-                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[39vw] md:w-[197px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  required
                 />
               </div>
               <div class="space-y-2">
                 <label for="state_of_origin" class="block text-sm font-medium">Gender</label>
-                <select name='gender' class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                <select name='gender' class="w-[39vw] md:w-[197px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
                   <option>Your Gender</option>
                   <option value='Male'>Male</option>
                   <option value='Female'>Female</option>
                 </select>
               </div>
             </div>
-  
+
             <div class="flex flex-col space-y-2 items-start ">
               <label for="nationality" class="block text-sm font-medium"> Your Nationality </label>
-              <input 
+              <input
                 type="text"
                 name="date_of_birth"
-                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
                 placeholder="Nationality"
               />
             </div>
-  
+
             <div class="flex flex-row items-center space-x-2 space-y-0">
               <div class="space-y-2">
                 <label for="place_of_birth" class="block text-sm font-medium">Place of Birth</label>
-                <input 
+                <input
                   type="text"
                   name="place_of_birth"
-                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[39vw] md:w-[197px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
                   placeholder="Place of Birth"
                 />
               </div>
               <div class="space-y-2">
                 <label for="state_of_origin" class="block text-sm font-medium">State of Origin</label>
-                <input 
+                <input
                   type="text"
                   name="state_of_origin"
-                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[39vw] md:w-[197px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
                   placeholder="State of Origin"
                 />
               </div>
@@ -102,36 +107,36 @@
 
             <div class="flex flex-col space-y-2 items-start ">
               <label for="home_address" class="block text-sm font-medium"> Home Address </label>
-              <input 
+              <input
                 type="text"
                 name="home_address"
-                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
-                placeholder="Nationality"
+                class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                placeholder="Home Address"
               />
             </div>
 
             <div class="flex flex-row items-center space-x-2 space-y-0">
               <div class="space-y-2">
                 <label for="email" class="block text-sm font-medium"> Email Address </label>
-                <input 
+                <input
                   type="email"
                   name="email"
-                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[39vw] md:w-[197px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
                   placeholder="Email Address"
                 />
               </div>
               <div class="space-y-2">
                 <label for="phone_num" class="block text-sm font-medium"> Phone Number </label>
-                <input 
+                <input
                   type="text"
                   name="phone_num"
-                  class="w-[39vw] md:w-[197px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[39vw] md:w-[197px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
                   placeholder="Phone Number"
                 />
               </div>
             </div>
             <hr>
-            <div class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md" id="personFw">
+            <div class="bg-armyGreen cursor-pointer text-white py-3 text-center rounded-md" id="personFw">
               Academic Details
             </div>
 
@@ -140,14 +145,14 @@
           <!-- Form 2 -->
 
           <div id="academic" class="hidden flex-col space-y-5">
-            <h2 class="font-bold text-3xl mb-10">Academic Qualification</h2>
-            
+            <h2 class="font-bold text-3xl mb-5">Academic Qualification</h2>
+
             <div id="oLevel" class="flex flex-col space-y-2 items-start ">
                 <label for="o_level" class="block text-sm font-medium"> O'Level Certificate </label>
-                <input 
+                <input
                   type="file"
                   name="o_level"
-                  class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                  class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
                 />
             </div>
 
@@ -164,21 +169,21 @@
 
             <div class="flex flex-col space-y-2 items-start ">
               <label for="trasncript" class="block text-sm font-medium"> Transcript of Academic Record (if available) </label>
-              <input 
+              <input
                 type="file"
                 name="transcript"
-                class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
+                class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen"
               />
             </div>
-          
+
             <hr>
 
             <div class="flex flex-row items-center space-x-2 space-y-0">
-              <div id='personBk' class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]">
+              <div id='personBk' class="bg-armyGreen cursor-pointer text-white py-3 text-center rounded-md w-[39vw] md:w-[197px]">
                 Personal Info.
               </div>
-  
-              <div id="academicFw" class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]"">
+
+              <div id="academicFw" class="bg-armyGreen cursor-pointer text-white py-3 text-center rounded-md w-[39vw] md:w-[197px]"">
                 Study Info.
               </div>
             </div>
@@ -187,11 +192,11 @@
           <!-- Form 3 -->
 
           <div id="study" class="hidden flex-col space-y-5">
-            <h2 class="font-bold text-3xl mb-10">Study Information</h2>
+            <h2 class="font-bold text-3xl mb-5">Study Information</h2>
 
             <div class="flex flex-col space-y-2 items-start ">
               <label for="degree_type" class="block text-sm font-medium">Degree Type</label>
-                <select name='degree_type' class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                <select name='degree_type' class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
                   <option>Degree Type</option>
                   <option value='Diploma'>Diploma</option>
                   <option value='Bachelors'>Bachelors</option>
@@ -248,23 +253,23 @@
 
             <div class="flex flex-col space-y-2 items-start ">
               <label for="state_option" class="block text-sm font-medium">Mode of Study</label>
-                <select name='mode_of_study' class="w-[80vw] md:w-[400px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
+                <select name='mode_of_study' class="w-[80vw] md:w-[400px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen">
                   <option>Mode of Study</option>
                   <option value='Fulltime'>Fulltime</option>
                   <option value='Part time'>Part time</option>
                 </select>
             </div>
-          
+
             <hr>
 
             <div class="flex flex-row items-center space-x-2 space-y-0">
-              <div class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]" id="studyBk">
+              <div class="bg-armyGreen cursor-pointer text-white py-3 text-center rounded-md w-[39vw] md:w-[197px]" id="studyBk">
                 Academic Details
               </div>
-  
-              <div class="bg-armyGreen cursor-pointer text-white py-2 text-center rounded-md w-[39vw] md:w-[197px]">
-                Payment
-              </div>
+
+              <button type="submit" class="bg-armyGreen cursor-pointer text-white py-3 text-center rounded-md w-[39vw] md:w-[197px]">
+                Submit
+              </button>
             </div>
           </div>
 
@@ -283,14 +288,14 @@
 <!--
 
   <div class="flex flex-col items-center">
-              <span class="flex items-center w-[80vw] md:w-[150px] md:h-[180px] px-4 py-2 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen cursor-pointer">
-                <label for="name" class="flex relative text-center cursor-pointer"> Passport Photograph </label> 
-                <input 
+              <span class="flex items-center w-[80vw] md:w-[150px] md:h-[180px] px-4 py-3 text-sm border border-armyGreen rounded-md focus:outline-none focus:ring-1 focus:ring-armyGreen cursor-pointer">
+                <label for="name" class="flex relative text-center cursor-pointer"> Passport Photograph </label>
+                <input
                   type="file"
                   name="name"
                   class=" cursor-pointer absolute opacity-0 w-[80vw] md:w-[150px] md:h-[180px]"
-                />  
-              </span>           
+                />
+              </span>
             </div>
 
 

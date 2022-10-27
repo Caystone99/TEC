@@ -1,3 +1,6 @@
+let apply = document.getElementById('application_form');
+let notice = document.getElementById('alert');
+
 let personal = document.getElementById('personal');
 let personFw = document.getElementById('personFw');
 
@@ -13,10 +16,17 @@ let addBtn = document.getElementById('addInput');
 let inputCount = 1;
 
 personFw.addEventListener('click', ()=>{
-    personal.style.WebkitAnimation = "slideOut 4s 2"
-    personal.style.animation = "slideOut 4s 2" 
-    personal.style.display = "none"
-    academic.style.display = "flex"
+    if(apply.name.value === ""){
+        notice.style.display = "block"
+        notice.innerHTML = "Please fill all required fields";
+        setTimeout(()=>{
+            notice.style.display = "none"
+        }, 5000)
+    }else{ 
+        personal.style.display = "none"
+        academic.style.display = "flex"
+    }
+    
 })
 
 personBk.addEventListener('click', ()=>{
