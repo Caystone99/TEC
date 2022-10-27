@@ -14,6 +14,7 @@ module.exports = {
         'navCol':"#E4E8E5",
         'beige': '#BD7E4E',
         'armyGreen': '#526B56',
+        'redNotice' : 'rgb(129, 41, 56)',
         'darkGreen': '#023C22',
         'mustard': '#DCA311',
         'darkGreen-50':"#023c22bb"
