@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "tsc && node index.js",
     "watch": "tailwindcss -i ./dist/input.css -o ./public/css/style.css --watch",
     "dev": "nodemon run index.js --watch",
     "build": "tsc",
