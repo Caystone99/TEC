@@ -13,3 +13,4 @@ const server = http_1.default.createServer(app_1.app);
 server.listen(config_1.PORT, () => {
     console.log(`Server is running on PORT ${config_1.PORT}`);
 });
+//# sourceMappingURL=index.js.map

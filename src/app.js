@@ -22,3 +22,4 @@ exports.app.use(express_1.default.json());
 exports.app.use((0, helmet_1.default)());
 exports.app.use((0, cors_1.default)());
 //module.exports = app;
+//# sourceMappingURL=app.js.map
