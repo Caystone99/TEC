@@ -25,3 +25,4 @@ routes.use('*', (req, res) => {
     res.render('404', { title: 'Page not found' });
 });
 exports.router = routes;
+//# sourceMappingURL=router.js.map
